@@ -136,7 +136,7 @@ start cfg ch outCh editor =
 -- Is there something else to do here?
 -- Previous version said "block on MVar forever" in rather obfuscated way
 main :: UI -> IO ()
-main _ui = forever $ threadDelay maxBound
+main _ui = forever $ threadDelay 1000000000
 
 -- | Clean up and go home
 end :: UI -> Bool -> IO ()
